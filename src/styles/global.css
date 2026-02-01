@@ -1,0 +1,199 @@
+/* Global Styles - Technical Blueprint Design System */
+
+/* ========================
+   CSS RESET
+   ======================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-primary);
+  background-color: var(--surface-canvas);
+  min-height: 100vh;
+}
+
+/* ========================
+   TYPOGRAPHY RULES
+   ======================== */
+
+/* Display XL - Light 300, 48px, tight */
+.text-display-xl {
+  font-weight: 300;
+  font-size: var(--text-display-xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+/* H1 Title - Regular 400, 24px */
+h1, .text-h1 {
+  font-weight: 400;
+  font-size: var(--text-h1);
+  line-height: var(--leading-snug);
+  letter-spacing: -0.01em;
+  color: var(--ink-primary);
+}
+
+/* H2 Subhead - Regular 400, 16px */
+h2, .text-h2 {
+  font-weight: 400;
+  font-size: var(--text-h2);
+  line-height: var(--leading-normal);
+  letter-spacing: -0.005em;
+  color: var(--ink-primary);
+}
+
+/* Body Reading - Regular 400, 14px */
+p, .text-body {
+  font-weight: 400;
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
+  letter-spacing: var(--tracking-normal);
+  color: var(--ink-secondary);
+}
+
+/* Label/Micro - Medium 500, 11px, UPPERCASE */
+.text-label {
+  font-weight: 500;
+  font-size: var(--text-label);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+/* Data Numerical - Regular 400, 13px, Tabular */
+.text-data {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: var(--text-data);
+  line-height: var(--leading-normal);
+  font-variant-numeric: tabular-nums;
+}
+
+/* No italics rule - use accent color for emphasis */
+em, i {
+  font-style: normal;
+  color: var(--color-accent-main);
+}
+
+/* ========================
+   LINKS
+   ======================== */
+a {
+  color: var(--color-accent-main);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ========================
+   GRID CELL UTILITY
+   ======================== */
+.grid-cell {
+  position: relative;
+  background: var(--surface-card);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-standard);
+}
+
+/* ========================
+   CARD COMPONENT
+   ======================== */
+.card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-grid);
+  border-radius: var(--radius-standard);
+  padding: 24px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-weight: 400;
+  font-size: var(--text-h1);
+  color: var(--ink-primary);
+}
+
+.card-icon {
+  color: var(--color-accent-main);
+}
+
+/* ========================
+   BUTTONS
+   ======================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  border-radius: var(--radius-standard);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-accent-main);
+  color: var(--ink-on-accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-accent-main);
+  border: 1px solid var(--color-accent-main);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-accent-subtle);
+}
+
+/* ========================
+   LAYOUT
+   ======================== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.page-content {
+  padding: 32px 0;
+}
+
+/* ========================
+   SELECTION
+   ======================== */
+::selection {
+  background-color: var(--color-accent-subtle);
+  color: var(--ink-primary);
+}

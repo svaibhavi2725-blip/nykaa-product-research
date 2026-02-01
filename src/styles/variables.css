@@ -1,0 +1,72 @@
+/* Design System: "Technical Blueprint" - CSS Variables */
+/* Version: 1.4 (Nykaa Pink & Refined Type) */
+
+:root {
+  /* ========================
+     SURFACE TOKENS (Cool Greys)
+     ======================== */
+  --surface-canvas: #E8E9ED;   /* Global background (Cool Concrete) */
+  --surface-card: #FFFFFF;     /* Primary container background */
+  --surface-subtle: #F5F6F8;   /* Internal segmentation */
+
+  /* ========================
+     INK TOKENS (Text & Icons)
+     ======================== */
+  --ink-primary: #0F1115;      /* Headlines (Off-black) */
+  --ink-secondary: #585C65;    /* Labels, body text (Cool Grey) */
+  --ink-tertiary: #9AA0A6;     /* Placeholders, disabled states */
+  --ink-on-accent: #FFFFFF;    /* Text inside primary buttons */
+
+  /* ========================
+     ACCENT TOKENS (Nykaa Pink)
+     ======================== */
+  --color-accent-main: #E80071;    /* Primary Actions, Active States */
+  --color-accent-hover: #CC0063;   /* Hover states for primary actions */
+  --color-accent-subtle: #FDEEF5;  /* Very faint accent wash */
+
+  /* ========================
+     FUNCTIONAL SIGNALS (Semantic)
+     ======================== */
+  --signal-error: #B3261E;     /* Critical Failure */
+  --signal-warning: #E6B000;   /* Attention Needed */
+  --signal-success: #006E50;   /* Operational */
+
+  /* ========================
+     BORDER TOKENS
+     ======================== */
+  --border-grid: #C4C6CD;      /* Structural lines (Cool Grey) */
+  --border-element: #E0E2E6;   /* Subtle borders within a card */
+  --border-accent: #E80071;    /* Accent-colored borders */
+
+  /* ========================
+     SPACING & RADIUS
+     ======================== */
+  --radius-standard: 12px;
+  --gap-grid: 0px;             /* No transparency between cards */
+
+  /* ========================
+     TYPOGRAPHY
+     ======================== */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* Type Scale */
+  --text-display-xl: 48px;
+  --text-h1: 24px;
+  --text-h2: 16px;
+  --text-body: 14px;
+  --text-label: 11px;
+  --text-data: 13px;
+
+  /* Line Heights */
+  --leading-tight: 1.0;
+  --leading-snug: 1.2;
+  --leading-normal: 1.4;
+  --leading-relaxed: 1.5;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.025em;
+  --tracking-snug: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.06em;
+}

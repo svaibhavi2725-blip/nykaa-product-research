@@ -1,0 +1,126 @@
+/* Navbar Component Styles - Technical Blueprint Design System */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--surface-card);
+  border-bottom: 1px solid var(--border-grid);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-main);
+  border-radius: 8px;
+}
+
+.navbar-logo svg {
+  width: 18px;
+  height: 18px;
+  color: var(--ink-on-accent);
+}
+
+.navbar-title {
+  font-weight: 400;
+  font-size: var(--text-h2);
+  color: var(--ink-primary);
+  letter-spacing: -0.01em;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 24px;
+  font-weight: 500;
+  font-size: var(--text-label);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--color-accent-main);
+}
+
+.nav-link.active {
+  color: var(--color-accent-main);
+  border-bottom-color: var(--color-accent-main);
+}
+
+.nav-link svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.5px;
+}
+
+/* Separator between nav items */
+.nav-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 24px;
+  background: var(--border-element);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 24px;
+    gap: 16px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 12px 16px;
+    font-size: 10px;
+  }
+
+  .nav-item:not(:last-child)::after {
+    display: none;
+  }
+}
