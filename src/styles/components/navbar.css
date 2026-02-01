@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: center;
   background: var(--color-accent-main);
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .navbar-logo svg {
